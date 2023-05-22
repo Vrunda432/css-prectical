@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>"
+</head>
+    <style>
+        .loadermain{
+            position: relative;
+        }
+        .loader{
+            position: absolute;
+            top: 200px;
+            left: 600px;
+            height: 200px;
+            width: 200px;
+            border-top: 10px solid black;
+            border-left: 10px;
+            border-right: 10px;
+            border-bottom: 10px;
+            animation: loading 3s;
+            border-radius: 50%;
+          }
+          p{
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            left: 663px;
+            top: 276px;
+          }
+          @keyframes loading{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+          }
+          h1{
+            font-size: 50px;
+            text-align: center;
+            animation: flip 2s ease;
+          }
+          h2{
+            font-style: italic;
+            font-size: 60px;
+            text-align: left;
+            animation: rotateIn 3s ease;
+          }
+          h3{
+            font-size: 60px;
+            text-align: right-bottem;
+            animation: hinge 5s ease-in-out;
+          }
+    </style>
+<body>
+    <div class="loadermain">
+        <div class="loader"></div>
+        <h1 class="">beautiful girl</h1>
+        <h2 class="">smart woman</h2>
+        <h3 class="">i am gratefull to be a woman</h3>
+        <p> Vrunda</p>
+    </div>
+</body>
+</html>

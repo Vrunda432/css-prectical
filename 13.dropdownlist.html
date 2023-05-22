@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .dropdown{
+            background-color: bisque;
+        }
+        .dropdown ul{
+            display: flex;
+            gap: 30px;
+        }
+        .dropdown ul li{
+            padding: 20px;
+        }
+        .dispmenu{
+            position: relative;
+        }
+        .dispmenu .showmenu{
+            display: none;
+            position: absolute;
+            top: 58px;
+            left: 0;
+            background-color: coral;
+            width: 112px;
+            height: auto;
+        }
+        .dispmenu:hover .showmenu{
+            display: block;
+        }
+        .dispmenu .showmenu li{
+            padding: 10px;
+        }
+</style>
+</head>
+<body>
+    <div class="dropdown">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="dispmenu">
+                <a href="">Service</a>
+                <ul class="showmenu">
+                    <li><a href="">service 1</a></li>
+                    <li><a href="">service 2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About As</a></li>  
+            <li><a href="">Contect As</a></li>
+</ul>
+</div>
+</body>
+</html>
